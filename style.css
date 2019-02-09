@@ -801,13 +801,14 @@ footer{
     	display: block;
     }
  	.header-content p{
- 		margin-left: 9px;
- 		font-size: 15px;
+ 		margin-left: 8px;
+ 		font-size: 11px;
  		padding-left: 0px;
 
  	}
  	.header-content button{
  		margin-left: 0px;
+ 		padding: 8px;
  	}
  	.navigation{
  		display: none;
