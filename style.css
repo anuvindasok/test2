@@ -22,6 +22,56 @@ header{
 	width: 100%;
 	margin: 0 auto;
 }
+
+
+
+
+
+
+
+.icon{
+	position: relative;
+	width: 50px;
+	height: 40px;
+	cursor: pointer;
+	float: right;
+	margin-top:16px;
+	margin-right: 16px;
+	display: none;
+}
+.icon span{
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	left: 0;
+	background:#00e7ff;
+	transition: 0.6s;
+}
+.icon .one{
+	top: 0;
+}
+.icon .two,.icon .three{
+	top: 16px;
+} 
+.icon .four{
+	top: 30px;
+}
+.icon.open .one,.icon.open .four{
+     display: none;
+}
+.icon.open .two{
+	transform: rotate(45deg);
+}
+.icon.open .three{
+	transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
 .inner-header-left{
 	width: 1200px;
 	float: left;
@@ -473,7 +523,7 @@ header{
     margin-right: -130px
 }
 .round-box2{
-	    width: 100px;
+	width: 100px;
     height: 100px;
     border-radius: 50px;
     background-color: #f4f4f4;
@@ -678,3 +728,197 @@ footer{
 }
 
 
+
+
+
+/*mobile view*/
+
+ @media only screen and (max-width:480px){
+ 	.inner-header-top{
+ 		width: 100%;
+ 	}
+ 	.inner-header-left{
+        width: 100%;
+ 	}
+ 	.inner-triangele {
+    width: 0;
+    height: 0;
+    border-left: 245px solid #f15a23;
+    border-right: 56px solid transparent;
+    border-bottom: 253px solid transparent;
+    border-top: 50px solid #f15a23;
+    }
+    .triangle1 h4 {
+    color: white;
+     font-size: 16px; 
+    margin-top: -47px;
+    margin-left: -28px;
+}
+.triangle1 {
+    width: 0;
+    height: 0;
+    margin-left:0px;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 60px solid black;
+    }
+ 	.inner-header-left1{
+ 		width: 80%;
+ 	}
+ 	.header-content{
+ 		width: 50%;
+ 	}
+ 	.header-content h1 {
+ 		color: black;
+ 		padding-top: 34%;
+ 		font-size: 17px;
+        padding-left: 15px;
+            width: 98%;
+ 	}
+ 	.main-img img {
+    width: 100%;
+    height: 260px;
+}
+
+.navigation{
+	width: 131px;
+    height: 185px;
+    float: right;
+	background-color: #342e31b8;
+	margin-top: 63px;
+    margin-right: -65px;
+}
+
+.navigation ul{
+    float: right;
+}
+.navigation ul li{
+	display: grid;
+	    padding: 5px;
+	    cursor: pointer;
+}
+    .icon{
+    	display: block;
+    }
+ 	.header-content p{
+ 		margin-left: 9px;
+ 		font-size: 15px;
+ 		padding-left: 0px;
+
+ 	}
+ 	.header-content button{
+ 		margin-left: 0px;
+ 	}
+ 	.navigation{
+ 		display: none;
+ 	}
+ 	.inner-main{
+ 		width: 100%;
+ 	}
+ 	.inner-tennis{
+ 		width: 100%;
+ 	}
+ 	.tennis-play-left{
+ 		width: 97%;
+ 		margin-top: 20px;
+ 		border:1px solid #f15a23;
+ 	}
+ 	.tennis-play-middle{
+ 		width: 97%;
+ 		margin-top: 20px;
+ 		border:1px solid #f15a23;
+ 	}
+ 	.tennis-play-right{
+ 		width: 97%;
+ 		margin-top: 20px;
+ 		border:1px solid #f15a23;
+ 	}
+ 	.inner-work{
+ 		width: 100%;
+ 	}
+ 	.inner-principle{
+ 		width: 100%;
+ 	}
+ 	.inner-business{
+ 		width: 100%;
+ 	}
+ 	.inner-events{
+ 		width: 100%;
+ 	}
+ 	.inner-touch{
+ 		width: 100%;
+ 	}
+ 	.last-form{
+ 		width: 100%;
+ 	}
+ 	.last-footer{
+ 		width: 100%;
+ 	}
+    .bg-text{
+    	margin-left: 0px;
+    }
+
+
+ 	.box1{
+ 		width: 96%;
+ 		float: none;
+ 		    margin-left: 5px;
+ 		    margin-top: 75px;
+ 	}
+ 	.box2{
+ 		width: 96%;
+ 		float: none;
+ 		    margin-left: 5px;
+ 		    margin-top: 75px;
+ 	}
+ 	.box3{
+ 		width: 96%;
+ 		float: none;
+ 		    margin-left: 5px;
+ 		    margin-top: 75px;
+ 	}
+ 	.box4{
+ 		width: 96%;
+ 		float: none;
+ 		    margin-left: 5px;
+ 		    margin-top: 75px;
+ 	}
+ 	.boxes p{
+ 		padding-bottom: 60px;
+ 	}
+ 	.boxes img{
+ 		margin-left: 157px;
+ 	}
+ 	.small-box2{
+ 		margin-top: -62px;
+ 	}
+ 	.upcoming-left{
+ 		width: 100%;
+ 	}
+ 	.upcoming-right{
+ 		width: 100%;
+ 		margin-top: 100px;
+ 	}
+ 	.round-box1{
+ 		  margin-right: 18px;
+          margin-top: -190px;
+ 	}
+ 	.round-box2{
+ 		margin-top: -230px;
+ 	}
+    .upcoming-right h1{
+    	float: none;
+    }
+    .contact-form-left{
+    	width: 100%;
+    }
+    .contact-form-right{
+    	width: 100%;
+    }
+    .last-img{
+    	height: 900px;
+    }
+    .form-box1-right p {
+    color: white;
+    font-size: 15px;
+ }
